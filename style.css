@@ -1,0 +1,106 @@
+/* Defaults */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  font-size: 15px;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: hsl(0, 0%, 95%);
+}
+
+/* Cards section */
+
+.cardWrapper {
+  width: 70%;
+  display: flex;
+  background: black;
+}
+
+.card1,
+.card1 button:hover {
+  background: hsl(31, 77%, 52%);
+  color: hsl(31, 77%, 52%);
+}
+.card2,
+.card2 button:hover {
+  background: hsl(184, 100%, 22%);
+  color: hsl(184, 100%, 22%);
+}
+.card3,
+.card3 button:hover {
+  background: hsl(179, 100%, 13%);
+  color: hsl(179, 100%, 13%);
+}
+
+.card {
+  width: 33vw;
+  height: 68vmin;
+  padding: 5vmin;
+  display: flex;
+  flex-direction: column;
+
+  color: hsl(0, 0%, 95%);
+}
+
+.card img {
+  width: 10vmin;
+}
+
+.card h1 {
+  font-family: "Big Shoulders Display", cursive;
+  font-size: 2.2rem;
+  margin: 5vmin 0;
+}
+
+.card p {
+  color: hsla(0, 0%, 100%, 0.75);
+  width: 170px;
+}
+
+button {
+  background: transparent;
+  outline: none;
+  border: 2px solid hsl(0, 0%, 95%);
+  border-radius: 50px;
+  width: 150px;
+  height: 50px;
+  color: hsl(0, 0%, 95%);
+  transition: 0.5s;
+  cursor: pointer;
+  margin-top: auto;
+}
+.card button:hover {
+  background: hsl(0, 0%, 95%);
+}
+
+@media only screen and (max-width: 1000px) {
+  body {
+    height: fit-content;
+    padding: 2rem;
+  }
+  .cardWrapper {
+    flex-direction: column;
+    width: fit-content;
+    width: 300px;
+  }
+  .card {
+    width: 100%;
+    height: 400px;
+  }
+  .card p {
+    width: 190px;
+    font-size: 16px;
+  }
+}

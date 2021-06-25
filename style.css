@@ -67,6 +67,7 @@ body {
 .card p {
   color: hsla(0, 0%, 100%, 0.75);
   width: 170px;
+  font-family: "Lexend Deca";
 }
 
 button {

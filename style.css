@@ -46,16 +46,25 @@ body {
 
 .card {
   width: 33vw;
-  height: 68vmin;
+  height: 66vmin;
   padding: 5vmin;
   display: flex;
   flex-direction: column;
-
   color: hsl(0, 0%, 95%);
 }
 
 .card img {
   width: 10vmin;
+}
+/* Adding border radius to card edges */
+.cardWrapper {
+  border-radius: 10px;
+}
+.card1 {
+  border-radius: 10px 0 0 10px;
+}
+.card3 {
+  border-radius: 0 10px 10px 0;
 }
 
 .card h1 {
@@ -103,5 +112,13 @@ button {
   .card p {
     width: 190px;
     font-size: 16px;
+  }
+
+  /* Fixing card border radius at a smaller viewport */
+  .card1 {
+    border-radius: 10px 10px 0 0;
+  }
+  .card3 {
+    border-radius: 0 0 10px 10px;
   }
 }

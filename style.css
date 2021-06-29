@@ -25,7 +25,6 @@ body {
 .cardWrapper {
   width: 70%;
   display: flex;
-  background: black;
 }
 
 .card1,
